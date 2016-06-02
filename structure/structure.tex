@@ -4,16 +4,45 @@
 
 \begin{document}
 \begin{abstract}
-  We describe the programatic structure of the content.
+  We describe the programmatic structure of the content.
 \end{abstract}
 \maketitle
 
-\section{Directory structure}
+\section{Global directory structure}
 
-The basic structure of a Ximera document 
 
+A collection of Ximera activities should be organized as a single
+directory that contains
+\begin{itemize}
+\item All the activities, with activities that are directly related
+  located within distinct own directories.
+\item A preamble file, if it is needed.
+\item A \texttt{xourse} file in its own directory.
+\end{itemize}
+As an example, see our directory for
+\link{mooculus1}{http://github.com/mooculus/calculus1/}. In this
+directory, the preamble is called \texttt{preamble.tex}, each
+collection of related activities are in their own directories, and the
+\texttt{xourse} file is in
+\link{mooculus1}{http://github.com/mooculus/calculus1/tree/master/mooculus1}.
+
+\section{Activity directory structure}
+
+Each collection of activities that would form a ``section/chapter'' of a
+book should be located in their own directories. In some sense the
+author should imagine these as being self-standing. As an example check out
+\link{mooculus1}{http://github.com/mooculus/calculus1/tree/master/anApplicationOfLimits}.
+
+Ideally the directory containing the activity would contain all the
+documents needed to understand and (re)produce the activity from an
+authors point of view. Other files that might be included could be:
+PDF's of papers, Mathematica documents that were used to develop
+examples, etc.
 
 \section{Document structure}
+
+Each activity 
+
 
 
 \section{Xourse}
