@@ -46,14 +46,17 @@
 
 
 
-\newcommand{\tightoverset}[2]{%for arrowvec
+\newcommand{\tightoverset}[2]{% for arrow vec
   \mathop{#2}\limits^{\vbox to -.5ex{\kern-0.75ex\hbox{$#1$}\vss}}}
-\newcommand{\arrowvec}[1]{\tightoverset{\scriptstyle\rightharpoonup}{#1}}
+\newcommand{\arrowvec}{\overrightarrow}
 \renewcommand{\vec}{\mathbf}
-\newcommand{\veci}{\vec{i}}
-\newcommand{\vecj}{\vec{j}}
-\newcommand{\veck}{\vec{k}}
+\newcommand{\veci}{{\boldsymbol{\hat{\imath}}}}
+\newcommand{\vecj}{{\boldsymbol{\hat{\jmath}}}}
+\newcommand{\veck}{{\boldsymbol{\hat{k}}}}
 \newcommand{\vecl}{\boldsymbol{\l}}
+\newcommand{\utan}{\vec{\hat{t}}}
+\newcommand{\unormal}{\vec{\hat{n}}}
+\newcommand{\ubinormal}{\vec{\hat{b}}}
 
 \newcommand{\dotp}{\bullet}
 \newcommand{\cross}{\boldsymbol\times}
